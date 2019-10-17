@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2d312d0-2d03-429c-a6fa-e9c931a74b5e" name="Default Changelist" comment="" />
+    <list default="true" id="d2d312d0-2d03-429c-a6fa-e9c931a74b5e" name="Default Changelist" comment="Prueba de github">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hello Kotlin/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hello Kotlin/MainKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +26,7 @@
   <component name="ProjectId" id="1SJCPV24gQcbkGxPmMyVqFI2b88" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../BobWorkStation-master/BobWorkStation" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -68,6 +74,14 @@
       <option name="presentableId" value="Default" />
       <updated>1571272287163</updated>
     </task>
+    <task id="LOCAL-00001" summary="Prueba de github">
+      <created>1571275238958</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1571275238958</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -80,5 +94,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Prueba de github" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prueba de github" />
   </component>
 </project>
