@@ -1,0 +1,95 @@
+import jdk.nashorn.internal.objects.Global.print
+
+fun main(args: Array<String>) {
+    println("Hola mundo!")
+    //variables
+    /*val PI = 3.14 //El tipo INT es inferenciado
+    var a: Int = 1//solo lectura, asignacion inmediata
+    val b = 2 //El tipo INT es inferenciado
+    val c: Int //El tipo es requerido cuando no se inicializa la variable
+    c = 3
+    //Las variables de tipo 'var' pueden cambiar su valor
+    var x = 5 //El tipo INT es inferenciado
+    x += 1
+
+    // String templates
+    val stringA = "a es $a"
+    println(stringA)
+    a = 2
+    val stringB = "${stringA.replace(oldValue:"es", newValue:"era")}, pero ahora es $a"
+    println(stringB)
+
+    //Funciones
+    //fun de funcion, nombre de la variable e camel case los parametros que se le envian y la variable que va a retornar
+    fun maximo(a: INT, b: INT): INT {
+        if(a > b){
+            return a
+        } else {
+            return b
+        }
+    }
+    fun maximoAB(a: int, b: int) = if(a>b) a else b
+
+    //Valores null y null checks
+    fun parseInt(str: String): Int? { //El signo de interrogacion al final del int indica que la variable puede ser null
+    }*/
+
+    //Ciclo for
+    val elementos = listOf("manzanas", "peras", "uvas", "bananas")
+    for (elemento in elementos){
+        println(elemento)
+    }
+
+    for (elemento in elementos.indices){
+        println("elemento en $elemento es ${elementos[elemento]}")
+    }
+
+    //Ciclo while
+    var indice = 0
+    while (indice < elementos.size){
+        println{"elemento en $indice es ${elementos[indice]}"}
+    }
+
+    //Expresion when
+    fun describir(objeto: Any): String =
+            when (objeto) {
+                1 -> "Uno"
+                "Hola" -> "Saludos"
+                is Long -> "Long"
+                !is String -> "NO es un string"
+                else -> "Desconocido"
+            }
+
+    println(describir{objeto: 2})
+
+    //Expresiones lambda
+    val frutas = listOf("manzanas", "peras", "uvas", "bananas")
+    frutas
+            .filter { it.startsWith(prefix = "m") }
+            .sortedBy { it }
+            .map { it.toUpperCase() }
+            .forEach{println(it)}
+
+    /*Convensiones de codigo
+    1. Para los nombres de archivos fuente
+    si un archivo de kotrlin contiene una sola clase, su nombre debe ser el mismo que el nombre de la clase mas la extension .kt
+    dicho nombre debe ser escribo utilizando pascal case(primera mayuscula y las demas palabras con inicio en mayuscula).
+    El nombre del archivo debe describir lo que el codigo hace. Si un archivo contiene multiples clases seleccionar un nombre que describa lo que
+    el archivo contiene
+    2. Definicion de la clase una clase debe tener el siguiente orden en su contenido:
+        a. Declaracion de propiedades y bloques inicializadores.
+        b. Constructores secudarios
+        c. Declaracion de metodos
+        d. Companion object
+    3. Conveciones de nombres:
+        a. Paquetes y clases: los nombres de los pquetes siempre se escriben en minusculas y no utilizan guiones bajos. Utilizar nombres
+        de multiples palabras no es recomendado pero si es se requerido se utiliza camel case. Nombres de clases y objetos utilizan
+        pascal case.
+        b. Nombres de funciones: LOs nombres de funciones, propiedades y variables locales comienzan con una letra minuscula y utilizan
+        camel case y o guines bajos.
+        c. Nombres de constantes: deben utilizar letras matusculas y guion bajo para separar los nombres.
+        */
+
+}
+
+
